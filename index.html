@@ -51,10 +51,10 @@
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="Products.html">Products</a></li>
-          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact</a></li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -68,6 +68,7 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
+
 
       <img src="assets/img/world-dotted-map.png" alt="" class="hero-bg" data-aos="fade-in">
 
@@ -114,24 +115,27 @@
 
     <!-- Featured Services Section -->
     <!-- Services Section -->
-    <section id="services">
+    <section id="featured-services" class="featured-services section">
       <h2>Our Services</h2>
-      <div class="services-container">
-          <div class="service">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="service-box" style="background-color: #e9ecef; padding: 30px; border-radius: 8px; flex: 1; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
               <h3>Banking Software Solutions</h3>
-              <p  style="text-align: justify;">This Software is designed to provide customized solutions for a wide range of financial and inventory management needs. Specifically developed for industries such as co-operative societies, money lending, and inventory-based businesses.</p>
+              <br>
+              <p>This Software is designed to provide customized solutions for a wide range of financial and inventory management needs. Specifically developed for industries such as co-operative societies, money lending, and inventory-based businesses</p>
+            </div>
           </div>
-          <div class="service">
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="service-box" style="background-color: #e9ecef; padding: 30px; border-radius: 8px; flex: 1; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
               <h3>Daily Collection Mobile Application</h3>
-              
-                <p style="text-align: justify;">Our user-friendly Android application streamlines daily cash collections with fast processing and secure SMS-based receipt delivery, ensuring reliable data handling and building trust and transparency for both customers and clients.</p>
+              <br>
+              <p>Our user-friendly Android application streamlines daily cash collections with fast processing and secure SMS-based receipt delivery, ensuring reliable data handling and building trust and transparency for both customers and clients</p>
+            </div>
           </div>
-          <div class="service">
-              <h3>Muttathe Mulla Management App</h3>
-              <p style="text-align: justify;">The mobile app provides an easy platform for loan management, allowing women to check loan details, make repayments, and access customer support with ease. </p>
-          </div>
+        </div>
       </div>
-  </section>
+    </section>
     <!-- End Services Section -->
 
    <!-- About Section -->
@@ -360,9 +364,14 @@
     </section><!-- /Products Section -->
 
     <!-- Testimonials Section -->
+     
     <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+      <style>
+        #testimonials {
+          background-color: #007bff; /* Attractive blue background color */
+          padding: 60px 0; /* Add some padding for better spacing */
+        }
+      </style>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -387,14 +396,14 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Binu N V</h3>
+                <h4>Thrissur Service Cooperative Bank</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <span>It significantly reduced the time and costs for our bank, leading to improved service delivery and customer satisfaction..</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>

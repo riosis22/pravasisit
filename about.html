@@ -52,10 +52,10 @@
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="Products.html">Products</a></li>
-          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact</a></li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -128,6 +128,7 @@
       </div>
 
     </section><!-- /About Section -->
+    
 
     <!-- Stats Section -->
     <section id="stats" class="stats section">
@@ -138,36 +139,58 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              
+              <span data-purecounter-start="0" data-purecounter-end="515" data-purecounter-duration="1" class="purecounter"></span>
               <p>Clients</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
               <p>Projects</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="7928" data-purecounter-duration="1" class="purecounter"></span>
               <p>Hours Of Support</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
               <p>Workers</p>
             </div>
           </div><!-- End Stats Item -->
 
         </div>
-
+        <br><br>
+      <style>
+        .mission-vision-box {
+          transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+        }
+        .mission-vision-box:hover {
+          background-color: #003366; /* Darker shade on hover */
+          transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+      </style>
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="mission-vision-box" style="background-color: #001973; color: white; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+            <h3 style="color: white; font-weight: bold; text-align: center;">OUR MISSION</h3>
+            <p>To deliver innovative IT solutions that empower businesses to achieve their goals and enhance operational efficiency.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mission-vision-box" style="background-color: #001973; color: white; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+            <h3 style="color: white; font-weight: bold; text-align: center;">OUR VISION</h3>
+            <p>To be a global leader in IT solutions, recognized for our commitment to quality, innovation, and customer satisfaction.</p>
+          </div>
+        </div>
       </div>
-
     </section><!-- /Stats Section -->
 
     <!-- Team Section -->
@@ -177,80 +200,295 @@
       <div class="container section-title" data-aos="fade-up">
         <span>Our Team<br></span>
         <h2>Our Team</h2>
-        <p>Meet our visionary leaders who drive our success and innovation every day.</p>
+        <p>Dynamic blend of innovative leaders and dedicated employees, all committed to driving excellence and achieving our shared vision.</p>
       </div><!-- End Section Title -->
-
+      
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Walter White</h4>
-                <span>Web Development</span>
-                <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
                 </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Sarah Jhinson</h4>
-                <span>Marketing</span>
-                <p>
-                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Sarah Jhinson</h4>
+                    <span style="margin: 0;">Marketing</span>
+                  </div>
                 </div>
+              </div>
+              <p>Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>William Anderson</h4>
-                <span>Content</span>
-                <p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">John Doe</h4>
+                    <span style="margin: 0;">Design</span>
+                  </div>
                 </div>
+              </div>
+              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-        </div>
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div><!-- End Row -->
 
-      </div>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div><!-- End Row -->
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member position-relative">
+              <div class="member-image" style="position: relative; overflow: hidden;">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="transition: opacity 0.3s;">
+                <div class="member-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(173, 216, 230, 0.8); color: black; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; transform: translateX(-100%);">
+                  <div>
+                    <h4 style="margin: 0;">Walter White</h4>
+                    <span style="margin: 0;">Web Development</span>
+                  </div>
+                </div>
+              </div>
+              <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div><!-- End Row -->
+            <script>
+              const members = document.querySelectorAll('.member-image');
+              members.forEach(member => {
+                member.addEventListener('mouseenter', () => {
+                  member.querySelector('img').style.opacity = '0.3';
+                  const info = member.querySelector('.member-info');
+                  info.style.opacity = '1';
+                  info.style.transform = 'translateX(0)';
+                });
+                member.addEventListener('mouseleave', () => {
+                  member.querySelector('img').style.opacity = '1';
+                  const info = member.querySelector('.member-info');
+                  info.style.opacity = '0';
+                  info.style.transform = 'translateX(-100%)';
+                });
+              });
+            </script>
+          </div><!-- End Team Member -->
     </section><!-- /Team Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+      <style>
+        #testimonials {
+          background-color: #007bff; /* Attractive blue background color */
+          padding: 60px 0; /* Add some padding for better spacing */
+        }
+      </style>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
