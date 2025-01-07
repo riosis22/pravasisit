@@ -1926,3 +1926,8 @@ section h2 {
 .starter-section {
   /* Add your styles here */
 }
+
+#testimonials {
+  background-color: #007bff; /* Attractive blue background color */
+  padding: 60px 0; /* Add some padding for better spacing */
+}
