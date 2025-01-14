@@ -50,12 +50,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html"Home<br></a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
-
+          </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -81,31 +81,37 @@
 
     <!-- Contact Section -->
      <!-- Contact Info Bar -->
-    <div class="container" aria-hidden="true">
-      <div class="row justify-content-center">
-        <div class="text-center">
-          <style>
-            .contact-info-bar a {
-              color: white;
-              text-decoration: none;
-            }
-            .contact-info-bar a:hover {
-              color: rgba(255, 255, 255, 0.8);
-            }
-          </style>
-          <div class="contact-info-bar p-3 bg-primary text-white" data-aos="fade-up">
+    <style>
+      .contact-info-bar-wrapper {
+        width: 100%;
+        background-color: rgb(70, 118, 190);
+        margin-bottom: 2rem;
+      }
+      .contact-info-bar {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+      }
+      .contact-info-bar a {
+        color: white;
+        text-decoration: none;
+      }
+      .contact-info-bar a:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    </style>
 
-            <a href="tel:+919037014455"><span><i class="bi bi-telephone" ></i> +91 9037014455</span></a>
+    <div class="contact-info-bar-wrapper">
+      <div class="contact-info-bar text-white" data-aos="fade-up">
+        <a href="tel:+919037014455"><span><i class="bi bi-telephone"></i> +91 9037014455</span></a>
+        <span class="mx-3">|</span>
+        <a href="https://wa.me/9048723474"><span><i class="bi bi-whatsapp"></i> +91 9037024455</span></a>
+        <span class="mx-3">|</span>
+        <a href="mailto:amalpravasis@gmail.com"><span><i class="bi bi-envelope"></i> pravasisitsolutions@gmail.com</span></a>
+      </div>
+    </div>
 
-            <span class="mx-3">|</span>
-
-            <a href="https://wa.me/9048723474"><span><i class="bi bi-whatsapp"></i> +91 9037024455</span></a>
-
-            <span class="mx-3">|</span>
-
-            <a href="mailto:amalpravasis@gmail.com"> <span><i class="bi bi-envelope"></i> pravasisitsolutions@gmail.com</span> </a>
-          </div>
-        </div>
       </div>
     </div>
     <section id="contact" class="contact section">
@@ -113,7 +119,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d76.0798848!3d11.0430422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0064949899%3A0x7807126a65a1392a!2sPravasis%20IT%20Solutions%2C%20Malappuram!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 470px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d76.0798848!3d11.0430422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0064949899%3A0x7807126a65a1392a!2sPravasis%20IT%20Solutions%2C%20Malappuram!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -272,12 +278,12 @@
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <div class="col-lg-3 col-md-12 footer-contact text-right text-md-start">
           <h4>Contact Us</h4>
           <p>Nechikkadan Building</p>
           <p>2nd floor,Up Hill</p>
           <p>Malappuram PO - 676505</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>9037014455,9037024455</span></p>
+          <p class="mt-4"><strong>Phone:</strong> <span>9037014455, 9037024455</span></p>
           <p><strong>Email:</strong> <span>pravasisitsolutions@gmail.com</span></p>
         </div>
 
