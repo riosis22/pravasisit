@@ -1469,7 +1469,7 @@ section,
 }
 
 .faq .faq-container .faq-active {
-  background-color: var(--heading-color);
+  background-color: rgb(66, 105, 212);
   transition: 0.3s;
 }
 
