@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Services - Pravasis IT Solutions</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Pravasis IT Solutions
+  * Template URL: https://bootstrapmade.com/Pravasis IT Solutions-bootstrap-Pravasis IT Solutionstics-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Pravasis IT Solutions</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="clientlist.html">Client-List</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="GetInTouch.html">Get In Touch</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>Clients</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Clients</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+  <div class="client-buttons text-center">
+    <button class="btn btn-primary" onclick="showClientList('RioEasyCollect')">RioEasyCollect</button>
+    <button class="btn btn-primary" onclick="showClientList('Sahakari MIS')">Sahakari MIS</button>
+    <button class="btn btn-primary" onclick="showClientList('Ente Muttathemulla')">Ente Muttathemulla</button>
+  </div>
+  <h1 style="text-align: center; font-style: normal; text-decoration: underline; position: sticky; top: 0; z-index: 10;">Client List</h1>
+
+  <div id="client-list" class="client-list mt-4" style="display: none;">
+    <ul id="list"></ul>
+  </div>
+
+  <style>
+    .client-buttons {
+      margin: 20px 0;
+    }
+    .client-buttons .btn {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .client-buttons .btn:hover {
+      background-color: #19293a;
+    }
+    .client-list {
+      font-style: oblique;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(8, 10, 146, 0.932);
+      margin: 0 auto; /* Center the list */
+      max-width: 800px; /* Set a maximum width for better layout */
+      border-top: 1px solid #19293a; /* Add a horizontal line at the top */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-height: 500px; /* Set a maximum height for the scrolling area */
+      margin-bottom: 100px;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("load", function() {
+      showClientList('RioEasyCollect')
+});
+
+    
+    const clients = {
+      'RioEasyCollect': [
+        'Chakkittapara SCB',
+        'Kozhikode Regional MCS',
+        'Kodiyathoor SCB',
+        'Nanminda CRB',
+        'Global Pravasi WCOS',
+        'Olavanna SCB',
+        'Nellikkapparamba AWWCS',
+        'Koodaranji MVCS',
+        'Kozhikode District Agriculturist & Non Agriculturist WSWCS',
+        'Omassery VCS',
+        'Valiyaparambil SCB',
+        'Kottur Integrated ADCS',
+        'Koodaranhi RWCS',
+        'Kodiyathur PVCS',
+        'Karassery PVCS',
+        'Perambra Regional AWCS',
+        'Arikkulam SCB',
+        'Changaroth PVCS',
+        'Perambra VCS',
+        'Arikkulam Agriculture & Other Workers WCS',
+        'Kozhakallur AWCS',
+        'Elathur Multipurpose CS',
+        'Purameri PVCS',
+        'Perambra Pravasi WCS',
+        'Villiappilly AICS',
+        'Kadalundi SCB',
+        'Kayanna Karshika Vikasana Thozhilali Kshema Sahakarana Sangham',
+        'Pazhassiraja Social WCS',
+        'Perumanna ADCS',
+        'Mavoor UCS',
+        'Kommeri SCB',
+        'Kozhikode ASWCS',
+        'Pantheerakavu RCS',
+        'Chelavoor SCB',
+        'Perambra West Agricultural SWCS',
+        'Nochad Agro Agricultural Social & WCS',
+        'Kairali VCS',
+        'Unity Vaniitha CS',
+        'Koodaranhi CRHS',
+        'Western Zone ADCOS',
+        'Kunnumal Block VCS',
+        'Maruthonkara Panchayath VCS',
+        'Vehicle Service Cooperative Society Perambra',
+        'Tuneri PVCS',
+        'Kadathanad Social WCS',
+        'Karanthur SCB',
+        'Arikuzha SCB',
+        'Edamon SCB',
+        'Ayiroor Village SCB',
+        'Malappattam SCB',
+        'Mathil SCB',
+        'Puzhathi SCB',
+        'Panoor SCB',
+        'Panoor SCB',
+        'Pinarayi FWCS',
+        'Narath VCS',
+        'Panoor Building CS',
+        'Pallikkunnu SCB',
+        'Kadavathur SCB',
+        'Kolachery SCB',
+        'Padiyotchal SCB',
+        'Peringome SCB',
+        'Thadikkadav SCB',
+        'Cherupuzha UCS',
+        'Kannur Ex-Servicemen MPCOS',
+        'Kannur Hire Goods OWCOS',
+        'Aravanchal PWCOS',
+        'Eruvessy SCB',
+        'Cherupuzha MWCS',
+        'Cherupuzha Panchayath AICS',
+        'Payyanur BAWCS',
+        'Kolakkad SCB',
+        'Madai SCB',
+        'Kooveri SCB',
+        'Padiyotchal LWCS',
+        'Ezhome PVCS',
+        'Dharamadam VCS',
+        'Olayambadi AWCS',
+        'Chapparapadavu AWCS',
+        'Payyannur ALWCS',
+        'Kalanad SCB',
+        'Pulingome RCS',
+        'Edakkad PVCS',
+        'Alakkode UCS',
+        'Cherukunnu SCB',
+        'Merchants C S Kannur',
+        'Vamal VCS',
+        'Chengalayi SCB',
+        'Chirakkal SCB',
+        'Ezhome SCB',
+        'Kannur Town SCB',
+        'Payyannur Merchants',
+        'Payyannur Rural',
+        'Sreekandapuram SCB',
+        'Kodiyeri SCB',
+        'Koyyode SCB',
+        'Elayavoor SCB',
+        'Mowanchery CRB',
+        'Pariyaram SCB',
+        'Chuzhali SCB',
+        'Pariyaram Vanitha CS',
+        'Vellur Village VCS',
+        'Karivellur SCB',
+        'Mullakodi CRB',
+        'Peralassery SCB',
+        'Kadirur MWCS',
+        'Peralam SCB',
+        'Kunhimangalam SCB',
+        'Kambil Vanitha CS',
+        'Aquaculture DCS',
+        'Kurumathur SCB',
+        'Kannadiparamba SCB',
+        'Valiyannur SCB',
+        'Koyyam SCB',
+        'Sreekandapuram FSWCS',
+        'Naduvil FWCS',
+        'Taliparamba Chethuthozhilali SS',
+        'Kuttiyeri SCB',
+        'Vellur SCB',
+        'Kankole VVCS',
+        'Alappadamba VCS',
+        'Thalaserry Municipal VCS',
+        'Karivellur Peralam PVCS',
+        'Chala SCB',
+        'Vadakkumbad SCB',
+        'Irikkur FWCS',
+        'Pulikurumba VCS',
+        'Sreekandapuram RCS',
+        'Vengad SCB',
+        'Payyanagadi AICS',
+        'Kararinakam SCB',
+        'Kavinchal VCS',
+        'Mattanur Range Toddy WCS',
+        'Muzhupilangad SCB',
+        'Thottumal VCS',
+        'Panunda Priyadarshini VCS',
+        'Thiruvangad FSWCS',
+        'Kiliyanthara SCB',
+        'Kooveri VCS',
+        'Eruvatty VCS',
+        'Cherupuzha Town VCS',
+        'Pappinissery Housing Co-operative Rural Society',
+        'Thiruvangad VCS',
+        'Kuttikkakam SCB',
+        'Sreekandapuram AWCS',
+        'Pallikkunnu Public WCS',
+        'Chandaragiri VCS',
+        'Kadirur VCS',
+        'Panayal SCB',
+        'Payaswini AICS',
+        'Manjeswaram SCB',
+        'Kanhgad UCS',
+        'Muttathody SCB',
+        'Madikkai SCB',
+        'Perdala SCB',
+        'Valiyaparamba Panchayath SCB',
+        'Kayyur SCB',
+        'Panathady SCB',
+        'Chengala SCB',
+        'Kolathur SCB',
+        'Vorkady SCB',
+        'Paivalike SCB',
+        'Miyapadavu SCB',
+        'Bedadka VCS',
+        'Bayar SCB',
+        'Mangalpady SCB',
+        'East Eleri SCB',
+        'Kundamkuzhi VSCS',
+        'Paivalike Panchayath AWCS',
+        'Pady Nekraje VVCS',
+        'Angadimogar SCB',
+        'Kundamkuzhi AICS',
+        'Bellur SCB',
+        'Kuttikole UCS',
+        'Mugu SCB',
+        'Kasaragod Farmers WCS',
+        'Kadambur LWCS',
+        'Kuttikole AWCS',
+        'Ajanur UCS',
+        'Padupp VCS',
+        'Autorikshaw Drivers CS',
+        'Chattanchal UCS',
+        'Kasaragod UCS',
+        'East Eleri VCS',
+        'Priyadrshini VCS',
+        'Kodlamogaru Puthur SCB',
+        'Majbail SCB',
+        'Ponampara SCB',
+        'Nileshwar Rural Cooperative HS',
+        'Belur VCS',
+        'Delampady AWCS',
+        'Thimiri SCB',
+        'West Eleri SCB',
+        'Nileshwar AWCS',
+        'Kasaragod Public Servants CS',
+        'Perumbala SCB',
+        'Chemnad PVCS',
+        'Kasthurba VCS',
+        'Kasaragode District Co-operative Employee WCS',
+        'The Enmakaje Panchayath PWCS',
+        'Thullunadu Farmers WCS',
+        'Mangalpady PUCS',
+        'Kumbala GWWCS',
+        'Jawahar Grameena Housing CS',
+        'Kasargod District Private Motors WCS',
+        'Kasaragod Mercantile CS',
+        'The Perla Primary WCS',
+        'Kasaragod Rubber FWCS',
+        'Kasaragod Merchants CS',
+        'Kasaragod Cooperative ECS',
+        'Kuttikkol VCS',
+        'Kumbla AWCS',
+        'Kottayam Farmers WCS',
+        'Purathur SCB',
+        'Kottakkal JCUS',
+        'East Eranad SCB',
+        'Mongam UCS',
+        'Tanalur SCB',
+        'Tirurangadi VCS',
+        'CAMCO Chemmad',
+        'Tirurangadi Auto & Taxi',
+        'Chokkad SCB',
+        'Vettam SCB',
+        'Parappanangadi Motor Transport CS',
+        'Nettikulam VCS',
+        'Vazhayoor AICS',
+        'Areacode SCB',
+        'Kodur SCB',
+        'Porur SCB',
+        'Tirur Housing Regional CS',
+        'Edavanna SCB',
+        'Kolkkalam SCB',
+        'Nilambur SCB',
+        'Wandoor SCB',
+        'Pookottur SCB',
+        'Edakkara AICOS',
+        'Kavannur SCB',
+        'Pulikkal AICOS',
+        'Pandikkad Rural',
+        'Parappur VCS',
+        'Vazhikkadav AICOS',
+        'Moothedam SCB',
+        'Moothedam CUB',
+        'Panthallur SCB',
+        'Chelembra SCB',
+        'Morayur SCB',
+        'Malappuram VCS',
+        'Ozhur SCB',
+        'Thenhipalam SCB',
+        'Marakkara SCB',
+        'Puzhakkattiri PVCS',
+        'Elamkulam SCB',
+        'Chaliyar AICOS',
+        'Pothukal AICOS',
+        'Urangattiri SCB',
+        'Melattur SCB',
+        'Pattikkad SCB',
+        'Wandoor Panchayat VSS',
+        'Edappatta RCS',
+        'Punnappala SCB',
+        'Kuruva Panchayath VSS',
+        'Pulikkal SCB',
+        'Vengara SCRB',
+        'Perinthalamanna MCS',
+        'Kottakal UCS',
+        'Thiruvali Panchayath VSS',
+        'Kizhuparamba SCB',
+        'Chaliyar SCB',
+        'Thiruvali SCB',
+        'Wandoor LWCS',
+        'Thalakkad SCB',
+        'Kappil RCS',
+        'Mankada Pallipuram SCB',
+        'Chaliyar PVCS',
+        'Vadakkupuram SCB',
+        'Imbichi Bava Memorial RCS',
+        'Anakkayam SCB',
+        'Pallikal RCS',
+        'Nilambur MCS',
+        'Kizhattur PAICS',
+        'Thiruvali RCS',
+        'Kottakal VCS',
+        'Thiruvali AICS',
+        'Mampad SCB',
+        'Kizhattur RCS',
+        'Nilambur RCS',
+        'Porur VVCS',
+        'Pallikal SCB',
+        'Trikkalangode SCB',
+        'Elankur SCB',
+        'Thuvvur SCB',
+        'Peruvallur SCB',
+        'Edarikkode SCB',
+        'Melattur RCS',
+        'Vettathur SCB',
+        'Malappuram AICS',
+        'Tirur SCB',
+        'Anakkayam VCS',
+        'Vaniyambalam RCS',
+        'Vaniyambalam VCS',
+        'Kalkkulam VCS',
+        'Cherukode CRB',
+        'Peruvallur RCS',
+        'Thennala SCB',
+        'Kootilangadi PVCS',
+        'Valavanur SCB',
+        'Vettikattiri SCB',
+        'Veliyamcode MCS',
+        'Pulpatta SCB',
+        'Perumpadappu RCS',
+        'Cherukavu RWCS',
+        'Karuvarakund PVCS',
+        'Angadipuram VCS',
+        'Kavanur SCSC',
+        'Chandakkunu VCS',
+        'Pookotur Rural Credit Society',
+        'Kodur Rural Bank',
+        'Muthuvallur SCB',
+        'Edavanna RCS',
+        'Vazhakkad VCS',
+        'Ernad AICOS',
+        'Thachanattukara RCS',
+        'Kannamangalam RCS',
+        'Mooniyur RCS',
+        'Malappuram Headload & General Workers CS',
+        'Vettathur PVCS',
+        'Malappuram Housing Society',
+        'Othukungal SCB',
+        'Makkaraparamba PVCS',
+        'Wandoor RCS',
+        'Cherukavu VCS',
+        'Puthuparamba SCB',
+        'Muthuvallur VCS',
+        'Amarambalam PVSS',
+        'Thrikkalangode RCS',
+        'Kalikavu VCS',
+        'Valanchery UCS',
+        'Thazhekkode SCB',
+        'Pathapiriyam VCS',
+        'Vattamkulam SCB',
+        'Kondotty area Bus Operator WCS',
+        'Cherukode VCS',
+        'Arakkuparamba SCB',
+        'Pulpatta VCS',
+        'Nannamukku Multipurpose CS',
+        'Elamkulam Urban CS',
+        'Vallikkunnu Anangadi VCS',
+        'Kuzhimanna SCB',
+        'Ponnani Taluk Rural Housing CS',
+        'Karulai Panchayath VSS',
+        'Veliyancode VCS',
+        'Mundakkal VCS',
+        'Niramaruthur Motor Development CS',
+        'Mankada SCB',
+        'Cheekode VCS',
+        'Kuzhimanna SCSC',
+        'Vellimukku SCB',
+        'Kondotty RCS',
+        'Chelembra RCS',
+        'Pookottumpadam RCS',
+        'Ariyallur SCB',
+        'Pulamanthole UCS',
+        'Thalakkad VCS',
+        'Kadungathund RCS',
+        'Cherukavu SCS',
+        'Konotty Regional Housing CS',
+        'Ponmundam SCB',
+        'Edathanattukara VCS',
+        'Kurumbathur SCB',
+        'Triprangode SCB',
+        'Tirur MCS',
+        'UCB Kottakkal',
+        'UCB Perinthalmanna',
+        'Shoranur SCB',
+        'Kannambra SCB',
+        'Pattambi Rural',
+        'Karakurussi SCB',
+        'Chethallur SCB',
+        'Sreekrishnapuram VCS',
+        'Palakkad Priyadarshini MPCS',
+        'Mannarkkad Multipurpose Co-operative Society',
+        'Kalladikkode SCB',
+        'Alanallur SCB',
+        'Kumaramputhur AICS',
+        'Kuthanur SCB',
+        'Chalakkudy TCB',
+        'Vennoor SCB',
+        'Maala Multipurpose CS',
+        'Thrissur SCB',
+        'Varavoor SCB',
+        'Andathode SCB',
+        'Pudukkad SCB',
+        'Kottathara SCB',
+        'Vengapally SCB'
+      ],
+      'Sahakari MIS': [
+        'Kodakara Block Pravasi Kshema Co-operative Society Ltd No.R 1482',
+        'Alathur Pravasi Welfare Co-operative Society',
+        'The High Range Pravasi welfare co-operative society',
+        'Ottapalam Pravasi Kshema Sahakarana Sangham',
+        'Attingal Pravasi Welfare Development Co-operative Society',
+        'Malappuram District Departmental Employees Co-operative Society Ltd No.M273',
+        'Pattambi Pravasi welfare co-operative society',
+        'Kizhattur RCS',
+        'Puzhakkal PWCS',
+        'Chittur Pravasi welfare co-operative society',
+        'Guruvayur Society',
+        'Kodungallur Pravasi welfare co-operative society',
+        'Vengara Pravasi welfare co-operative society',
+        'Sulthan Batheri Pravasi welfare co-operative society Ambalavayal',
+        'Thrithala Pravasi welfare co-operative society',
+        'Taliparamba Pravasi welfare co-operative society',
+        'Muthuvalloor Rural Society',
+        'Ollukkara Pravasi welfare co-operative society',
+        'Peravoor PWCS',
+        'New Indus Travel Agri Society',
+        'Mukkam Muncipality Samoohya KSS',
+        'Mayyil Area PWCS',
+        'Kunnathoor Pravasi VSKSS',
+        'Iritty Area Pravasi FWCS',
+        'Calicut PWCS',
+        'Mundur PWCS',
+        'Alakode Area PWCS',
+        'Anjarakandy Area Pravasi Family WCS',
+        'Erumankottur Society',
+        'Mavoor Meghala Pravasi Society',
+        'Manathavady UCS',
+        'Vellangallur Pravasi',
+        'Malabar Pravasi Tourism Development Co-operative Society',
+        'Kuthuparamba Pravasi',
+        'Udma Pravasis',
+        'Kanhangad PWCS',
+        'Thavinhal Co-operative society',
+        'Manathavady Rural',
+        'Puzhakkara Vanitha Society',
+        'Pappinissery Pravasi Society',
+        'Kuttikkol Vypari Vyavasai',
+        'Kunnumal Block Pravasi Social Welfare CS',
+        'Thrikaruva Residence Association',
+        'Kerala State SPATCOS',
+        'Nileshwar Muncipal People WCS',
+        'Manathavady Taluk Employee Co-op',
+        'Manathavady VCS',
+        'Susheela Gopalan Smaraka VCS',
+        'Sumesh Venjaramoodu Co-operative Rubber Marketing Society',
+        'Nileshwar PWCS',
+        'Thalakad Multipurpose CS',
+        'Puthuppadi meghala karshika wcs',
+        'Edavarad Awcs',
+        'Panoor Area Pravasi Family Welfare Cooperative Society',
+        'Thondernad Panchayat AICS',
+        'Advalue Nidhi',
+        'SFC Nidhi',
+        'Chaliyar Nidhi',
+        'Kausthubam Nidhi',
+        'KFIN Nidhi',
+        'Kuniyil Nidhi',
+        'Kanjirapally Nidhi',
+        'Leora Nidhi',
+        'SDF Nidhi',
+        'MALABAR VIKAS NIDHI',
+        'Alanallur Nidhi',
+        'Sreenidhi',
+        'Magna Micro Nidhi Ltd',
+        'Trustassure Nidhi',
+        'Aarushi Value Nidhi Ltd',
+        'Kisan Suraksha Nidhi Ltd',
+        'Vengara Desam Nidhi',
+        'Sreyas Malabar Nidhi',
+        'Myfins Nidhi Ltd',
+        'Aimznow',
+        'Chembakara Nidhi',
+        'Maxvalue Nidhi',
+        'Kalikavu Nidhi',
+        'Navabarath Nidhi',
+        'JSK Agri Nidhi',
+        'KFIN Syndicate Nidhi',
+        'JAN KISAN',
+        'Alookaran Nidhi',
+        'Thrikaripur Nidhi',
+        'Perinthalmanna Nidhi',
+        'FinMax Nidhi',
+        'Kattilepoovam Nidhi',
+        'Amana Best Laid Society',
+        'City Bankers',
+        'Advalue Finance',
+        'PMR Fincorp',
+        'Sambadhya Bankers',
+        'Sreelakshmi Financiers',
+        'Lakshmi Bankers',
+        'Eranad Bankers',
+        'Pavizham Finance',
+        'Advalue Finance Wandoor',
+        'Trustassure Finacial Service',
+        'Samridhi Finance',
+        'Fine Finance',
+        'Easyfin',
+        'Pamba Bankers',
+        'Union Finserv',
+        'FinMax Finance',
+        'Kesava Finance',
+        'Loan Market',
+        'IDFC Fincorp',
+        'Keranad Fincorp',
+        'Global Fin Corp',
+        'Gurudarshan Finance',
+        'Merac KML(Munneb K)',
+        'Akshayasree Gold Loan',
+        'Anugraha Financers(Kasargode)',
+        'Pavizham Mini Finance',
+        'Dude Finance',
+        'Test Galaxy',
+        'Easyfin Parappanad',
+        'Honest Fincorp',
+        'Union Finserv Nilambur',
+        'IDFE fincorp',
+        'Malappuram finance',
+        'Advalue Finance Perinthalmanna(Deposit)',
+        'Wealth Plus',
+        'KDC',
+        'Abana Chits',
+        'Dhana Bankers (Chits)',
+        'Leora Chits',
+        'Gurudarshan Kuries',
+        'vellangallur chits',
+        'Varapra VCS',
+        'Kolathur VCS',
+        'Kerala Vyapari Vyavasayi Samithi- Wandoor',
+        'Kerala Vyapari Vyavasayi Samithi- Edakkara',
+        'Thulanur PACCS',
+        'Pre Paithoth Farmers Welfare CS',
+        'Trikadeeri panchayath Vanitha CS',
+        'Puthur VCS',
+        'Kisan Social Purameri',
+        'Mahila CS',
+        'KairaliVayanashala',
+        'Kannur Merchant Chitty',
+        'Seena Nidumbram VCS',
+        'Pulikkal SCB',
+        'Greenland FSC (Kodiyathur)',
+        'Chemancheri Nursery',
+        'Credex Fincorp',
+        'IDFE Perambra',
+        'Malappuram Finance Chemmad',
+        'Vyvedham Bankers',
+        'QuickFin',
+        'Keyoor Credit Corporation',
+        'Navaikulam Residents Welfare Co-Operative Society',
+        'Bedakam Pravasi CS',
+        'Bharath Finance'
+      ],
+      'Ente Muttathemulla': [
+        'Edavanna SCB',
+        'Kavanur SCB',
+        'Panthallur SCB',
+        'Kuruva PVCS',
+        'Ponnani SCB',
+        'Panthallur Rural Housing Society',
+        'Vettikattiri SCB',
+        'Cherukavu PVCS',
+        'Melattur SCB',
+        'Kootilangadi PVCS',
+        'Kizhuparamba SCB',
+        'Puzhakkatiri PVCS',
+        'Vattamkulam SCB',
+        'Parappanangadi SCB',
+        'Kommeri SCB',
+        'Chemmanchery SCB',
+        'Thiroor SCB',
+        'Varadiam SCB',
+        'Koratty SCB',
+        'Pavaratty SCB',
+        'Chittatukara SCB',
+        'Thaniyam Panchayath SCB',
+        'Amballur SCB',
+        'Avinissery SCB',
+        'Peringadoor SCB',
+        'Thaikkad SCB',
+        'Peringottukkara SCB',
+        'Kolazhy SCB',
+        'Ammadam SCB',
+        'Vilvattam SCB',
+        'Mankara SCB',
+        'Thadukassery SCB',
+        'Thirumittacode SCB',
+        'Nagalassery SCB',
+        'Shornur SCB',
+        'Malampuzha SCB',
+        'Anakkara SCB',
+        'Nalleppilly SCB',
+        'Kulukilliyad SCB',
+        'Kayiliyad SCB',
+        'Sreekrishnapuram SCB',
+        'Kothakurussi SCB',
+        'Pottassery SCB',
+        'Kannambra SCB',
+        'Coyalmannam SCB',
+        'Thannirangad SCB',
+        'Chittur Govt Servents SCB',
+        'Pattambi SCB',
+        'Puduppariyaram SCB'
+      ]
+    };
+
+    function showClientList(clientName) {
+      const listElement = document.getElementById('list');
+      listElement.innerHTML = '';
+      const clientArray = clients[clientName].sort();
+
+      clientArray.forEach(client => {
+        const li = document.createElement('li');
+        li.textContent = client;
+        listElement.appendChild(li);
+      });
+
+      document.getElementById('client-list').style.display = 'block';
+    }
+  </script>
+
+<footer id="footer" class="footer dark-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">Pravasis IT Solutions</span>
+        </a>
+        <p>Your trusted partner for innovative IT solutions in the financial sector</p>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="#careers">Career</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Our Products</h4>
+        <ul>
+          <li><a href="#">Sahakari MIS</a></li>
+          <li><a href="#">Easy Collect</a></li>
+          <li><a href="#">Muttathe Mulla</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-right text-md-start">
+        <h4>Contact Us</h4>
+        <p>Nechikkadan Building</p>
+        <p>1st floor,Up Hill</p>
+        <p>Malappuram PO - 676505</p>
+        <p class="mt-4"><strong>Phone:</strong> <span>9037014455, 9037024455</span></p>
+        <p><strong>Email:</strong> <span>pravasisitsolutions@gmail.com</span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>2025</span> <strong class="px-1 sitename">Pravasis IT Solutions Pvt Ltd</strong> <span>All Rights Reserved</span></p>
+  </div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
