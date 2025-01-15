@@ -35,6 +35,25 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .client-buttons .btn {
+        margin: 10px 0 !important; /* Adjust margin for vertical spacing */
+        width: 15%;
+      }
+    @media (max-width: 450px) {
+      .client-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        
+      }
+      .client-buttons .btn {
+        margin: 10px 0 !important; /* Adjust margin for vertical spacing */
+        width: 50%;
+      }
+    }
+  </style>
 </head>
 
 <body class="services-page">
@@ -86,6 +105,7 @@
     <button class="btn btn-primary" onclick="showClientList('Sahakari MIS')">Sahakari MIS</button>
     <button class="btn btn-primary" onclick="showClientList('Ente Muttathemulla')">Ente Muttathemulla</button>
   </div>
+
   <h1 style="text-align: center; font-style: normal; text-decoration: underline; position: sticky; top: 0; z-index: 10;">Client List</h1>
 
   <div id="client-list" class="client-list mt-4" style="display: none;">
