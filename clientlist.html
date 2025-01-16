@@ -36,10 +36,17 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    
     .client-buttons .btn {
-        margin: 10px 0 !important; /* Adjust margin for vertical spacing */
+        margin: 10px 0 !important;
         width: 15%;
+        background-color: #0d6efd;
+        transition: background-color 0.3s;
       }
+    .client-buttons .btn.active {
+        background-color: #19293a;
+        border-color: #19293a;
+    }
     @media (max-width: 450px) {
       .client-buttons {
         display: flex;
@@ -51,6 +58,7 @@
       .client-buttons .btn {
         margin: 10px 0 !important; /* Adjust margin for vertical spacing */
         width: 50%;
+        
       }
     }
   </style>
@@ -127,25 +135,54 @@
     }
     .client-list {
       font-style: oblique;
-      background-color: #f8f9fa;
+      background-color: #ffffff;
       padding: 20px;
       border-radius: 5px;
-      box-shadow: 0 2px 10px rgba(8, 10, 146, 0.932);
-      margin: 0 auto; /* Center the list */
-      max-width: 800px; /* Set a maximum width for better layout */
-      border-top: 1px solid #19293a; /* Add a horizontal line at the top */
-      overflow-y: auto; /* Enable vertical scrolling */
-      max-height: 500px; /* Set a maximum height for the scrolling area */
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.932);
+      margin: 0 auto;
+      max-width: 800px;
+      border-top: 1px solid #19293a;
+      overflow-y: auto;
+      max-height: 500px;
       margin-bottom: 100px;
+    }
+
+    .client-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .client-list li {
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .client-list li:nth-child(odd) {
+      background-color: #dff1ff; /* Light blue */
+      border-left: 4px solid #034aa8;
+    }
+
+    .client-list li:nth-child(even) {
+      background-color: #ffffff; /* Light purple */
+      border-left: 4px solid #e70000;
+    }
+
+    .client-list li:hover {
+      transform: translateX(5px);
+      cursor: pointer;
     }
   </style>
 
   <script>
     window.addEventListener("load", function() {
-      showClientList('RioEasyCollect')
-});
+      showClientList('RioEasyCollect');
+      document.querySelector('button[onclick="showClientList(\'RioEasyCollect\')"]').classList.add('active');
+    });
 
-    
     const clients = {
       'RioEasyCollect': [
         'Chakkittapara SCB',
@@ -695,7 +732,6 @@
         'Vyvedham Bankers',
         'QuickFin',
         'Keyoor Credit Corporation',
-        'Navaikulam Residents Welfare Co-Operative Society',
         'Bedakam Pravasi CS',
         'Bharath Finance'
       ],
@@ -753,6 +789,12 @@
     };
 
     function showClientList(clientName) {
+      document.querySelectorAll('.client-buttons .btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      document.querySelector(`button[onclick="showClientList('${clientName}')"]`).classList.add('active');
+
       const listElement = document.getElementById('list');
       listElement.innerHTML = '';
       const clientArray = clients[clientName].sort();
@@ -842,3 +884,4 @@
 </body>
 
 </html>
+
