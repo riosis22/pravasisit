@@ -113,6 +113,10 @@
     <button class="btn btn-primary" onclick="showClientList('Ente Muttathemulla')">Ente Muttathemulla</button>
   </div>
 
+  <div class="search-container text-center mt-4 mb-4">
+    <input type="text" id="searchBox" class="form-control mx-auto" style="max-width: 300px;" placeholder="Search for a bank...">
+  </div>
+
   <h1 style="text-align: center; font-style: normal; text-decoration: underline; position: sticky; top: 0; z-index: 10;">Client List</h1>
 
   <div id="client-list" class="client-list mt-4" style="display: none;">
@@ -806,7 +810,24 @@
       });
 
       document.getElementById('client-list').style.display = 'block';
+
+      // Reset search box
+      document.getElementById('searchBox').value = '';
     }
+
+    document.getElementById('searchBox').addEventListener('input', function() {
+      const searchText = this.value.toLowerCase();
+      const listItems = document.querySelectorAll('#list li');
+      
+      listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(searchText)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
   </script>
 
 <footer id="footer" class="footer dark-background">
@@ -884,4 +905,5 @@
 </body>
 
 </html>
+
 
