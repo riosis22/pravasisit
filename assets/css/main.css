@@ -98,12 +98,13 @@ h6 {
 }
 @media (max-width: 768px) {
   #hd2 {
-    font-size: 16.7px; /* Smaller font size for mobile */
+    font-size: 16.5px; /* Smaller font size for mobile */
     text-align: justify; /* All other styles from the general h5 remain applied */
   font-weight: bold; /* Make the h5 text bolder */
   }
 }
 
+  
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
