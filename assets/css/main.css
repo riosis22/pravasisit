@@ -1854,3 +1854,18 @@ section h2 {
   /* Add your styles here */
 }
 
+.page-title {
+  padding-bottom: 80px;
+  margin-bottom: 5px;
+}
+.fresh-updates {
+  padding-top: 0;
+  margin-top: 0;
+}
+.mission-vision-box {
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+.mission-vision-box:hover {
+  background-color: #003366; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
