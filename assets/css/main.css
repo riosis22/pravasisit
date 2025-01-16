@@ -88,6 +88,21 @@ h6 {
   font-family: var(--heading-font);
   font-display: swap;
 }
+/* Media query for the specific h5 in mobile view */
+@media (max-width: 768px) {
+  #hd1 {
+    font-size: 17.5px; /* Smaller font size for mobile */
+    text-align: left; /* All other styles from the general h5 remain applied */
+  font-weight: bold; /* Make the h5 text bolder */
+  }
+}
+@media (max-width: 768px) {
+  #hd2 {
+    font-size: 16.7px; /* Smaller font size for mobile */
+    text-align: justify; /* All other styles from the general h5 remain applied */
+  font-weight: bold; /* Make the h5 text bolder */
+  }
+}
 
 /* Pulsating Play Button
 ------------------------------*/
