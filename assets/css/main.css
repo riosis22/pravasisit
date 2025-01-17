@@ -249,14 +249,22 @@ h6 {
   z-index: 997;
 }
 
+
+
 .header .logo {
   line-height: 1;
 }
-
 .header .logo img {
-  max-height: 36px;
+  max-height: 100px;
   margin-right: 8px;
 }
+@media (max-width: 576px) {
+  .header .logo img {
+    max-height: 65px; /* Adjust logo size for small devices */
+    margin-right: 8px;
+  }
+}
+
 
 .header .logo h1 {
   font-size: 30px;
@@ -275,6 +283,19 @@ h6 {
   border-radius: 4px;
   transition: 0.3s;
 }
+    @media (max-width: 768px) {
+      .btn-getstarted {
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    @media (min-width: 769px) {
+      .btn-getstarted {
+        display: inline-block;
+      }
+    }
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
@@ -1869,3 +1890,9 @@ section h2 {
   background-color: #003366; /* Darker shade on hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
+@media (min-width: 768px) {
+  .siteheading {
+    font-size: 2.5em !important; /* Ensure it overrides any other styles */
+  }
+}
+
