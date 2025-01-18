@@ -61,7 +61,54 @@
         
       }
     }
+  .client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  .client-logo {
+    max-width: 150px; /* Adjust the size as needed */
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  .client-logo:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+  }
+  .client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  .client-logo {
+    max-width: 150px; /* Adjust the size as needed */
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  .client-logo:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+  }
   </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const logos = document.querySelectorAll('.client-logo');
+      logos.forEach(logo => {
+        logo.addEventListener('click', function() {
+          alert('You clicked on ' + this.alt);
+        });
+      });
+    });
+  document.addEventListener('DOMContentLoaded', function() {
+    const logos = document.querySelectorAll('.client-logo');
+    logos.forEach(logo => {
+      logo.addEventListener('click', function() {
+        alert('You clicked on ' + this.alt);
+      });
+    });
+  });
+  </script>
 </head>
 
 <body class="services-page">
@@ -157,34 +204,6 @@
   <img src="/assets/img/Logo/Client47.webp" alt="Client 47 Logo" class="client-logo">
   <img src="/assets/img/Logo/Client48.webp" alt="Client 48 Logo" class="client-logo">
 </div>
-
-<style>
-  .client-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-  }
-  .client-logo {
-    max-width: 150px; /* Adjust the size as needed */
-    margin: 10px;
-    transition: transform 0.3s;
-  }
-  .client-logo:hover {
-    transform: scale(1.1); /* Scale effect on hover */
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const logos = document.querySelectorAll('.client-logo');
-    logos.forEach(logo => {
-      logo.addEventListener('click', function() {
-        alert('You clicked on ' + this.alt);
-      });
-    });
-  });
-</script>
 <!-- End Generation Here -->
 
 <footer id="footer" class="footer dark-background">
