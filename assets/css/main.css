@@ -2058,3 +2058,7 @@ img:hover {
   line-height: 1.6;
   transition: all 1s ease;
 }
+.member-image:hover iframe {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
