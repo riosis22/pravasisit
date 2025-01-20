@@ -2010,3 +2010,51 @@ img:hover {
   margin: 0;
   color: #666;
 }
+.features {
+  padding: 60px 0;
+}
+.feature-card {
+  background: rgb(234, 241, 241);
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 1s ease;
+  text-align: center;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  background: #0dcaf0 !important;
+}
+.feature-card:hover .icon-wrapper i {
+  color: #0dcaf0 !important;
+  background: white !important;
+}
+.feature-card:hover h4,
+.feature-card:hover p {
+  color: white !important;
+}
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+.icon-wrapper i {
+  font-size: 2.5rem;
+  padding: 20px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  color: #0dcaf0;
+  transition: all 1s ease;
+  display: inline-block;
+}
+.feature-card h4 {
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+.feature-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  transition: all 1s ease;
+}
