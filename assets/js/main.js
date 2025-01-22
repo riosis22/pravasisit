@@ -164,4 +164,50 @@
         }
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('whatsapp-form');
+  form.addEventListener('submit', (event) => {
+    sendWhatsAppMessage(event, 'My Project Name');
+  });
+});
+
+function sendWhatsAppMessage(event, projectname) {
+  event.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const date = document.getElementById('date').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name || !email || !subject || !date || !message) {
+    alert("Please fill out all fields before sending!");
+    return;
+  }
+
+  const whatsappMessage = `Hello, here are the details for the ${projectname} project:\n\n` +
+    `Name: ${name}\n` +
+    `Email: ${email}\n` +
+    `Subject: ${subject}\n` +
+    `Date: ${date}\n` +
+    `Message: ${message}`;
+
+  const recipientNumber = '+919048723474';
+  const appLink = `whatsapp://send?phone=${recipientNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+  const webLinkDesktop = `https://web.whatsapp.com/send?phone=${recipientNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+  const webLinkMobile = `https://wa.me/${recipientNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    const appWindow = window.open(appLink, '_blank');
+    setTimeout(() => {
+      if (!appWindow || appWindow.closed || typeof appWindow.closed === 'undefined') {
+        window.open(webLinkMobile, '_blank');
+      }
+    }, 1000);
+  } else {
+    window.open(webLinkDesktop, '_blank');
+  }
+}
+
 })();
