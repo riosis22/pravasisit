@@ -1111,7 +1111,7 @@ section,
 
 .about .content ul h5 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .about .content ul p {
@@ -2076,4 +2076,53 @@ img:hover {
   left: 0;
   width: 100%;
   height: 100%;
+}
+/*--------------------------------------------------------------
+# subproduct  Section Section
+--------------------------------------------------------------*/
+.subproduct .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subproduct .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subproduct .content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.subproduct .content ul i {
+  flex-shrink: 0;
+  font-size: 48px;
+  color: var(--accent-color);
+  margin-right: 20px;
+  line-height: 0;
+}
+
+.subproduct .content ul h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #064b4b;
+}
+
+.subproduct .content ul p {
+  font-size: 15px;
+}
+
+.subproduct .content p:last-child {
+  margin-bottom: 0;
+}
+
+.subproduct .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+.subproduct .bi-star {
+  color: #064b4b !important; 
 }
