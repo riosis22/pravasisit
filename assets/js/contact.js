@@ -15,7 +15,7 @@ function sendWhatsAppMessage(event) {
       `Message: ${message}`;
   
     // Specify the recipient's WhatsApp number (include country code)
-    const recipientNumber = '+919048723474'; // Replace with the desired number
+    const recipientNumber = '+919037014455'; // Replace with the desired number
     
     // Links for WhatsApp App and Web
     const appLink = `whatsapp://send?phone=${recipientNumber}&text=${encodeURIComponent(whatsappMessage)}`;
